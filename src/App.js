@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+//import React from 'react';
 import './App.css';
+//import './components/Сard.css';
+import Hero from './components/Сard';
+import characters from './components/gallery';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Superhero gallery</h1>
+      {
+        characters.map((character) =>
+        <Hero name={character.name} universe={character.universe} alterEgo={character.alterEgo} occupation={character.occupation} friends={character.friends} superPowers={character.superPowers} src={character.src}></Hero>)
+      } 
+      
     </div>
   );
 }
