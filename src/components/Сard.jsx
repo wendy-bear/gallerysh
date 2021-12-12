@@ -4,12 +4,12 @@ function Hero(props) {
     return (
         <div className='wraper'>
             <img src={props.src} alt="" />
-            <div className="hero-name">{props.name}</div>
-            <div className="hero-universe">{props.universe}</div>
-            <div className="hero-alterego">{props.alterEgo}</div>
-            <div className="hero-occupation">{props.occupation}</div>
-            <div className="hero-friends">{props.friends}</div>
-            <div className="hero-powers">{props.superPowers}</div>
+            <div className="hero-name"><b>Имя:</b> {props.name}</div>
+            <div className="hero-universe"><b>Вселенная:</b> {props.universe}</div>
+            <div className="hero-alterego"><b>Альтер Эго:</b> {props.alterEgo}</div>
+            <div className="hero-occupation"><b>Род деяельности:</b> {props.occupation}</div>
+            <div className="hero-friends"><b>Друзья:</b> {props.friends}</div>
+            <div className="hero-powers"><b>Суперсилы:</b> {props.superPowers}</div>
 
         </div>
     )
