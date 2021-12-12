@@ -10,7 +10,13 @@ function App() {
       <h1>Superhero gallery</h1>
       {
         characters.map((character) =>
-        <Hero name={character.name} universe={character.universe} alterEgo={character.alterEgo} occupation={character.occupation} friends={character.friends} superPowers={character.superPowers} src={character.src}></Hero>)
+        <Hero name={character.name}
+         universe={character.universe} 
+         alterEgo={character.alterEgo} 
+         occupation={character.occupation} 
+         friends={character.friends} 
+         superPowers={character.superPowers} 
+         src={character.src}/>)
       } 
       
     </div>

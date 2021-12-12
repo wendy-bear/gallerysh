@@ -42,6 +42,16 @@ h1 {
 .hero-name {
   color: darkmagenta;
   font-size: 25px;
+  margin-left: 20px;
+}
+
+
+.hero-universe,
+.hero-alterego,
+.hero-occupation,
+.hero-friends,
+.hero-powers {
+  margin: 0px 20px 0px 20px;
 }
 
 .wraper {
@@ -51,4 +61,24 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
+  border: 1px solid seagreen;
+  border-radius: 20px;
+  width: 50%;
+}
+
+
+.App {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 20px;
 }
